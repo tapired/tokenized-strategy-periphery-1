@@ -54,6 +54,7 @@ contract Setup is Test, Clonable {
     uint256 public profitMaxUnlockTime = 10 days;
 
     function setUp() public virtual {
+        console.log("chainid", block.chainid);
         _setTokenAddrs();
 
         // Make sure everything works with USDT
